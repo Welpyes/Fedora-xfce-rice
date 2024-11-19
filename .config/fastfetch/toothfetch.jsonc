@@ -1,0 +1,69 @@
+// ~/.config/fastfetch/config.jsonc
+// Main fastfetch config but displaying "Toothless" and "Krokmou" in elder futhark, to replicate the neofetch config files
+// The logo is called in ~/.local/bin/toothfetch
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo":{
+        "width": 30,
+        "type": "sixel" // chafa won't work since fastfetch will think that "toothfetch" is the term, so it calls the wrong image backend...
+    },
+    "display": {
+        "separator": "• "
+    },
+    "modules": [
+        "break",
+        {
+            "type": "custom",
+            "format": "        \u001b[90mᛏᛟᛟᚦᛚᛖᛊᛊ \u001b[95m  \u001b[90mᚲᚱᛟᚲᛗᚢ"
+        },
+        {
+            "type": "custom",
+            "format": "╭───────────────────────────────╮"
+        },
+        {
+            "type": "os",
+            "key": "  ",
+            "format": "{3}"
+        },
+        {
+            "type": "host",
+            "key": "  "
+        },
+        {
+            "type": "kernel",
+            "key": "  "
+        },
+        {
+            "type": "wm",
+            "key": "  "
+        },
+        {
+            "type": "shell",
+            "key": " $ "
+        },
+        {
+            "type": "terminal",
+            "key": "  "
+        },
+        {
+            "type": "uptime",
+            "key": " 󰔚 "
+        },
+        {
+            "type": "memory",
+            "key": " 󰍛 "
+        },
+        {
+            "type": "packages",
+            "key": "  "
+        },
+        {
+            "type": "custom",
+            "format": "╰───────────────────────────────╯"
+        },
+        {
+            "type": "custom",
+            "format": "     \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m "
+        }
+    ]
+}

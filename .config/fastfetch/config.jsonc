@@ -1,0 +1,72 @@
+// ~/.config/fastfetch/config.jsonc
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "display": {
+        "separator": "• "
+    },
+    "logo":{
+    "type": "kitty",
+        "source": "~/.config/fastfetch/image.jpg",
+    	"width": 30
+    },
+    "modules": [
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[36m      Hoshiyomi | Welpyes "
+        },
+        {
+            "type": "custom",
+            "format": "╭───────────────────────────────╮"
+        },
+        {
+            "type": "os",
+            "key": "  ",
+            "format": "{2}"
+        },
+        {
+                    "type": "host",
+                    "key": "  "
+                },
+        {
+            "type": "kernel",
+            "key": "  "
+        },
+                {
+            "type": "custom",
+            "format": " \u001b[34m󰇅 \u001b[37m• Samsung S9+"
+        },
+        {
+            "type": "wm",
+            "key": "  "
+        },
+        {
+            "type": "shell",
+            "key": " $ "
+        },
+        {
+            "type": "terminal",
+            "key": "  "
+        },
+        {
+            "type": "uptime",
+            "key": " 󰔚 "
+        },
+        {
+            "type": "memory",
+            "key": " 󰍛 "
+        },
+        {
+            "type": "packages",
+            "key": "  "
+        },
+        {
+            "type": "custom",
+            "format": "╰───────────────────────────────╯"
+        },
+        {
+            "type": "custom",
+            "format": " \u001b[90m──  \u001b[31m──  \u001b[32m──  \u001b[33m──  \u001b[34m──  \u001b[35m──  \u001b[36m──  \u001b[37m── "
+        }
+    ]
+}
