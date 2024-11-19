@@ -16,3 +16,4 @@ Fedora Xfce Dot files
 - Applauncher • rofi
 - Statusbar • Polybar
 - Shell • Zsh + Starship
+- Terminal • Kitty
