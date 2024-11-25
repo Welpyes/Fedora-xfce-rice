@@ -2,9 +2,20 @@
 ## Aliases
 ##
 
+
+alias ff="fastfetch"
+alias dnfcpr="sudo dnf copr enable"
+alias dnfls="sudo dnf list"
+alias dnflg="sudo dnf list | grep"
+alias dnfi="sudo dnf install"
+alias dnfr="sudo dnf remove"
+alias dnfcl="sudo dnf clean all"
+alias dnfrf="sudo rpm -e --nodeps"
+alias dnfsh="sudo dnf search"
 alias run='pnpm run'
 alias c="clear"
 alias q="exit"
+alias rt="exec zsh"
 alias cleanram="sudo sh -c 'sync; echo 3 > /proc/sys/vm/drop_caches'"
 alias trim_all="sudo fstrim -va"
 alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
@@ -15,19 +26,8 @@ alias uz='unzip' # uz <archive_decompress> -d <dir>
 alias sr='source ~/.config/zsh/env.zsh'
 alias ..="cd .."
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e" 
-alias mkdir="mkdir -p"
-alias fm='ranger'
-alias pacin="pacman -Slq | fzf -m --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk \"{print \$2}\")' | xargs -ro sudo pacman -S"
-alias paruin="paru -Slq | fzf -m --preview 'cat <(paru -Si {1}) <(paru -Fl {1} | awk \"{print \$2}\")' | xargs -ro  paru -S"
-alias pacrem="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
-alias pac="pacman -Q | fzf"
-alias parucom="paru -Gc"
-alias parupd="paru -Qua"
-alias pacupd="pacman -Qu"
-alias parucheck="paru -Gp"
-alias cleanpac='sudo pacman -Rns $(pacman -Qtdq); paru -c'
-alias installed="grep -i installed /var/log/pacman.log"
-alias ls="exa --color=auto --icons"
+alias mkdir="mkdir -p"  
+alias ls="eza --color=auto --icons"
 alias l="ls -l"
 alias la="ls -a"
 alias lla="ls -la"
