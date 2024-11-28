@@ -6,9 +6,9 @@
 palette = "catppuccin_mocha"
 
 # Setups
-format="$directory$git_branch$character"
-right_format = """$git_status$cmd_duration"""
-add_newline = false 
+format="$directory$git_branch$cmd_duration\n$character"
+right_format = """$git_status"""
+add_newline = true 
 
 # Other languages configurations:
 c.disabled = true
@@ -29,9 +29,9 @@ format = ' [$symbol$environment](dimmed green) '
 
 # Prompt symbols 
 [character]
-success_symbol = "[¥ / ](green bold)"
-error_symbol = "[](pink)"
-vicmd_symbol = "[](peach)"
+success_symbol = "[ ¥ ❯ ](green bold)"
+error_symbol = "[  ❯ ](pink)"
+vicmd_symbol = "[   ❯ ](peach)"
 
 [directory]
 format = "[]($style)[ ](bg:base fg:pink)[$path](bg:base fg:lavender bold)[ ]($style)"
@@ -62,7 +62,7 @@ deleted = "${count}"
 [cmd_duration]
 min_time = 1
 # duration & style 
-format = "[]($style)[[神](bg:base fg:flamingo bold)$duration](bg:base fg:text)[ ]($style)"
+format = "[]($style)[[󰔚 ](bg:base fg:lavender bold)$duration](bg:base fg:text)[ ]($style)"
 disabled = false
 style = "bg:none fg:base"
 
@@ -90,6 +90,6 @@ overlay0 = "#6c7086"
 surface2 = "#585b70"
 surface1 = "#45475a"
 surface0 = "#313244"
-base = "#1e1e2e"
+base = "#292e42"
 mantle = "#181825"
 crust = "#11111b"
