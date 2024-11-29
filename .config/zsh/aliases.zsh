@@ -37,7 +37,7 @@ alias grep='grep --color=auto'
 alias mv='mv -v'
 alias cp='cp -vr'
 alias rm='rm -vr'
-alias commit="git add . && git commit -m"
+alias commit="git add . && git commit"
 alias push="git push"
 alias git-rm="git ls-files --deleted -z | xargs -0 git rm"
 alias g=git
