@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Directory containing the autostart scripts
+AUTOSTART_DIR="$HOME/.autostart"
+
+# Loop through all files in the directory
+for file in "$AUTOSTART_DIR"/*; do
+    # Skip the file named 'innitrc'
+    if [[ $(basename "$file") == "initrc" ]]; then
+        continue
+    fi
+    
+    # Check if the file is executable
+    if [[ -x "$file" ]]; then
+        # Execute the file
+        "$file"
+    fi
+done

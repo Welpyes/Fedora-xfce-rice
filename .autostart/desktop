@@ -1,0 +1,14 @@
+#!/bin/bash 
+
+# kill xfce panel
+killall xfce4-panel
+
+# i3 & compositor
+GALLIUM_DRIVER=zink MESA_GL_VERSION_OVERRIDE=4.0 exec fastcompmgr -o 0.4 -r 12 -c -C -m 0.7 &
+exec i3 &
+
+# set wallpaper
+feh --bg-fill ~/wallpapers/wallpaper1.jpg &
+
+## Launch Polybar
+bash ~/.config/polybar/launch.sh --forest &
