@@ -11,7 +11,7 @@ Fedora Xfce Dot files
 - Device • Samsung S9+
 ### repos i ~~stole~~ borrowed
 - rofi theme : https://github.com/adi1090x/rofi
-- nord icon : https://github.com/alvatip/Nordzy-icon
+- nord icon : https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme
 - polybar : https://github.com/adi1090x/polybar-themes
 - kitty colour schemes : https://github.com/adi1090x/kitty-cat
 # 
