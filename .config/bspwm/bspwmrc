@@ -10,7 +10,7 @@ sxhkd &
 #bash ~/.config/bspwm/dynamic-gaps.sh &
 
 # Set wallpaper (using feh, nitrogen, etc.)
-feh --bg-scale ~/wallpapers/suigyat-widescreen.png &
+feh --bg-scale ~/wallpapers/suipic-widescreen.png &
 
 # Set up monitors and desktops
 bspc monitor -d 1 2 3 4 5
