@@ -1,5 +1,4 @@
-cd ~
-clear
+rm -rf /proc/uptime
 
 ZDOTDIR="$HOME/.config/zsh"
 

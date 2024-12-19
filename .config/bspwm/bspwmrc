@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# Start a compositor (optional, for transparency/shadows)
+GALLIUM_DRIVER=zink MESA_GL_VERSION_OVERRIDE=4.0 exec fastcompmgr -o 0.65 -r 12 -c -C -m 0.6 -e 0.6 &
+
+#GALLIUM_DRIVER=zink MESA_GL_VERSION_OVERRIDE=4.0 exec picom &
+
+sxhkd &
+
+#bash ~/.config/bspwm/dynamic-gaps.sh &
+
+# Set wallpaper (using feh, nitrogen, etc.)
+feh --bg-scale ~/wallpapers/suigyat-widescreen.png &
+
+# Set up monitors and desktops
+bspc monitor -d 1 2 3 4 5
+
+# General bspwm configurations
+bspc config border_width 3
+bspc config window_gap 25  # Adjust gap size as per preference
+bspc config split_ratio 0.5
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+bspc config focus_follows_pointer true
+
+# Floating modifier
+bspc config pointer_follows_monitor true
+bspc config pointer_follows_focus true
+
+bspc config focused_border_color "#A7AFD4"
+bspc config normal_border_color "#3C58A0"
+
+bspc subscribe node_add node_remove desktop_focus | while read -r _; do
+    ~/.config/bspwm/widescreen-gaps.sh
+done
+

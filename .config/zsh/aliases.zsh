@@ -3,6 +3,7 @@
 ##
 
 
+alias icat="kitty icat"
 alias ff="fastfetch"
 alias dnfcpr="sudo dnf copr enable"
 alias dnfls="sudo dnf list"

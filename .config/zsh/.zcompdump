@@ -216,11 +216,13 @@ _comps=(
 'bsdgrep' '_grep'
 'bsdinstall' '_bsdinstall'
 'bsdtar' '_tar'
+'bspc' '_bspc'
 'btdownloadcurses' '_bittorrent'
 'btdownloadgui' '_bittorrent'
 'btdownloadheadless' '_bittorrent'
 'btlaunchmany' '_bittorrent'
 'btlaunchmanycurses' '_bittorrent'
+'btm' '_btm'
 'btmakemetafile' '_bittorrent'
 'btreannounce' '_bittorrent'
 'btrename' '_bittorrent'
@@ -272,6 +274,7 @@ _comps=(
 'chdir' '_cd'
 'chflags' '_chflags'
 'chfn' '_users'
+'chg' '_hg'
 'chgrp' '_chown'
 'chimera' '_webbrowser'
 'chkconfig' '_chkconfig'
@@ -633,7 +636,6 @@ _comps=(
 'ggetopt' '_getopt'
 'ggrep' '_grep'
 'ggv' '_gnome-gv'
-'gh' '_gh'
 'ghc' '_ghc'
 'ghc-pkg' '_ghc'
 'ghci' '_ghc'
@@ -803,6 +805,7 @@ _comps=(
 'hello' '_hello'
 'help' '_sccs'
 'hexdump' '_hexdump'
+'hg' '_hg'
 'hilite' '_precommand'
 'histed' '_zed'
 'history' '_fc'
@@ -925,10 +928,9 @@ _comps=(
 'ldd' '_ldd'
 'less' '_less'
 'let' '_math'
-'lf' '_lf'
-'lfcd' '_lf'
 'lftp' '_ncftp'
 'lha' '_lha'
+'libinput' '_libinput'
 'light' '_webbrowser'
 'lighty-disable-mod' '_lighttpd'
 'lighty-enable-mod' '_lighttpd'
@@ -1553,7 +1555,6 @@ _comps=(
 'sshfs' '_sshfs'
 'stack' '_stack'
 'star' '_tar'
-'starship' '_starship'
 'start' '_initctl'
 'stat' '_stat'
 'status' '_initctl'
@@ -1653,7 +1654,6 @@ _comps=(
 'tkconch' '_twisted'
 'tkinfo' '_texinfo'
 'tla' '_tla'
-'tldr' '_tldr'
 'tload' '_tload'
 'tmux' '_tmux'
 'tmuxinator' '_tmuxinator'
@@ -1857,7 +1857,6 @@ _comps=(
 'xsetbg' '_xloadimage'
 'xsetroot' '_x_utils'
 'xsltproc' '_xmlsoft'
-'xss-lock' '_xss-lock'
 'xterm' '_xterm'
 'xtightvncviewer' '_vnc'
 'xtp' '_imagemagick'
@@ -1877,6 +1876,7 @@ _comps=(
 'yash' '_sh'
 'yast' '_yast'
 'yast2' '_yast'
+'yfm' '_yfm'
 'ypbind' '_yp'
 'ypcat' '_yp'
 'ypmatch' '_yp'
@@ -2091,19 +2091,19 @@ autoload -Uz _afew _age _android _archlinux-java _artisan \
             _rslsync _rspec _rsvm _rubocop _sbt \
             _scala _screencapture _scrub _sdd _sdkmanager \
             _setcap _sfdx _shallow-backup _shellcheck _showoff \
-            _srm _stack _starship _subliminal _supervisorctl \
-            _supervisord _svm _teamocil _thor _tmuxinator \
-            _tmuxp _tox _ts-node _tsc _udisksctl \
-            _ufw _uuidgen _virtualbox _vnstat _wemux \
-            _wg-quick _xsel _yarn _zcash-cli _zinit \
-            _bootctl _busctl _coredumpctl _curl _eza \
-            _gh _hostnamectl _journalctl _kernel-install _lf \
-            _localectl _loginctl _networkctl _oomctl _polybar \
-            _polybar_msg _resolvectl _rg _sd_hosts_or_user_at_host _sd_machines \
-            _sd_outputmodes _sd_unit_files _systemctl _systemd _systemd-analyze \
-            _systemd-delta _systemd-inhibit _systemd-path _systemd-run _systemd-tmpfiles \
-            _timedatectl _tldr _udevadm _udisks2 _varlinkctl \
-            _wl-copy _wl-paste _wpctl _xss-lock _SUSEconfig \
+            _srm _stack _subliminal _supervisorctl _supervisord \
+            _svm _teamocil _thor _tmuxinator _tmuxp \
+            _tox _ts-node _tsc _udisksctl _ufw \
+            _uuidgen _virtualbox _vnstat _wemux _wg-quick \
+            _xsel _yarn _yfm _zcash-cli _zinit \
+            _bootctl _bspc _btm _busctl _coredumpctl \
+            _curl _eza _hg _hostnamectl _journalctl \
+            _kernel-install _libinput _localectl _loginctl _networkctl \
+            _oomctl _polybar _polybar_msg _resolvectl _rg \
+            _sd_hosts_or_user_at_host _sd_machines _sd_outputmodes _sd_unit_files _systemctl \
+            _systemd _systemd-analyze _systemd-delta _systemd-inhibit _systemd-path \
+            _systemd-run _systemd-tmpfiles _timedatectl _udevadm _udisks2 \
+            _varlinkctl _wl-copy _wl-paste _wpctl _SUSEconfig \
             __arguments _a2ps _a2utils _aap _abcde \
             _absolute_command_paths _ack _acpi _acpitool _acroread \
             _adb _add-zle-hook-widget _add-zsh-hook _alias _aliases \

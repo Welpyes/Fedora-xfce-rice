@@ -1,0 +1,100 @@
+# Start terminal
+super + Return
+    kitty
+
+# Kill focsed window
+super + shift + q
+    bspc node -c
+# launch zen browser
+super + shift + b 
+    bash ~/.local/bin/fire
+# launch file manager
+super + e 
+    exec pcmanfm
+
+# Application launcher (use your rofi/dmenu launcher)
+alt + space
+    bash ~/.config/polybar/forest/scripts/launcher.sh &
+
+# Focus window in a direction
+super + j
+    bspc node -f west
+super + k
+    bspc node -f south
+super + l
+    bspc node -f north
+super + semicolon
+    bspc node -f east
+
+# Alternatively, use arrow keys for focus
+super + Left
+    bspc node -f west
+super + Down
+    bspc node -f south
+super + Up
+    bspc node -f north
+super + Right
+    bspc node -f east
+
+# Move window in a direction
+super + shift + j
+    bspc node -s west
+super + shift + k
+    bspc node -s south
+super + shift + l
+    bspc node -s north
+super + shift + semicolon
+    bspc node -s east
+
+# Alternatively, use arrow keys for moving windows
+super + shift + Left
+    bspc node -s west
+super + shift + Down
+    bspc node -s south
+super + shift + Up
+    bspc node -s north
+super + shift + Right
+    bspc node -s east
+
+# Switch between desktops
+super + {1-5}
+    bspc desktop -f ^{1-5}
+
+# Move focused window to a desktop
+super + shift + {1-5}
+    bspc node -d ^{1-5}
+
+# Toggle fullscreen
+super + f
+    bspc node -t fullscreen
+
+# Toggle floating mode
+super + alt + x
+    bspc node -t floating
+
+# Resize windows
+super + r
+    bspc node -z right 20 0
+super + shift + r
+    bspc node -z left 20 0
+super + r + Up
+    bspc node -z top 0 -20
+super + r + Down
+    bspc node -z bottom 0 20
+
+# Restart bspwm
+super + shift + r
+    bspc wm -r
+
+# Exit bspwm
+super + shift + e
+    bspc quit
+
+# Focus parent container
+super + a
+    bspc node -f parent
+
+# Focus child container
+super + d
+    bspc node -f first_child
+
